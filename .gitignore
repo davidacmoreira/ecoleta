@@ -1,3 +1,7 @@
 server/node_modules/**/*
 server/npm-debug.log*
 server/npm-error.log*
+
+web/node_modules/**/*
+web/npm-debug.log*
+web/npm-error.log*
