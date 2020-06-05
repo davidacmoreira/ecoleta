@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Feather as Icon } from '@expo/vector-icons';
-import { View, ImageBackground, Image, Text, StyleSheet } from 'react-native';
+import { View, ImageBackground, Image, Text, StyleSheet, TextInput, KeyboardAvoidingView, Platform } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
 
 const Home = () => {
+  const [country, setCountry] = useState('');
+  const [city, setCity] = useState('');
   const navigation = useNavigation();
 
   function handleNavigateToPoints() {
-    navigation.navigate('Points');
+    navigation.navigate('Points', {
+      country,
+      city,
+    });
   }
 
   return (
@@ -19,11 +24,28 @@ const Home = () => {
     >
       <View style={styles.main}>
         <Image source={require('../../assets/logo.png')} />
-        <Text style={styles.title}>seu market place recolha residuos</Text>
-        <Text style={styles.description}>ajudamos a recolher residuos pessoas...</Text>
+        <View>
+          <Text style={styles.title}>seu market place recolha residuos</Text>
+          <Text style={styles.description}>ajudamos a recolher residuos pessoas...</Text>
+        </View>
       </View>
 
       <View style={styles.footer}>
+        <TextInput 
+          style={styles.input}
+          placeholder="enter country"
+          value={country}
+          autoCorrect={false}
+          onChangeText={setCountry}
+        />
+        <TextInput 
+          style={styles.input}
+          placeholder="enter city"
+          value={city}
+          autoCorrect={false}
+          onChangeText={setCity}
+        />
+
         <RectButton style={styles.button} onPress={handleNavigateToPoints}>
           <View style={styles.buttonIcon}>
             <Text>
