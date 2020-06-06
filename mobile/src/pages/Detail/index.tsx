@@ -17,6 +17,7 @@ interface Data {
     name: string;
     email: string;
     whatsapp: string;
+    country: string;
     city: string;
   };
   items: {
@@ -74,6 +75,7 @@ const Detail = () => {
 
         <View style={styles.address}>
           <Text style={styles.addressTitle}>address</Text>
+          <Text style={styles.addressContent}>{data.point.country}</Text>
           <Text style={styles.addressContent}>{data.point.city}</Text>
         </View>
       </View>

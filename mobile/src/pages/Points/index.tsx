@@ -71,6 +71,7 @@ const Points = () => {
   useEffect(() => {
     api.get('points', {
       params: {
+        country: routeParams.country,
         city: routeParams.city,
         items: selectedItems
       }
