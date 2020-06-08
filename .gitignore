@@ -2,6 +2,14 @@ server/node_modules/**/*
 server/npm-debug.log*
 server/npm-error.log*
 
+server/src/database/database.sqlite
+server/uploads/**/*
+
 web/node_modules/**/*
 web/npm-debug.log*
 web/npm-error.log*
+
+mobile/node_modules/**/*
+mobile/npm-debug.log*
+mobile/npm-error.log*
+mobile/.expo
