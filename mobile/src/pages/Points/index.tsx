@@ -108,7 +108,7 @@ const Points = () => {
         </TouchableOpacity>
         
         <Text style={styles.title}>welcome</Text>
-        <Text style={styles.description}>find a point in the map</Text>
+        <Text style={styles.description}>find waste collection point</Text>
 
         <View style={styles.mapContainer}>
           { initialPosition[0] !== 0 && (

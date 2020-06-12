@@ -25,8 +25,8 @@ const Home = () => {
       <View style={styles.main}>
         <Image source={require('../../assets/logo.png')} />
         <View>
-          <Text style={styles.title}>seu market place recolha residuos</Text>
-          <Text style={styles.description}>ajudamos a recolher residuos pessoas...</Text>
+          <Text style={styles.title}>marketplace for waste collection</Text>
+          <Text style={styles.description}>help people find a collection point for waste</Text>
         </View>
       </View>
 
