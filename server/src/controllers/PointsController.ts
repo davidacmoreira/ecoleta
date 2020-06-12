@@ -24,7 +24,11 @@ class PointsController {
             };
         });
 
-        return response.json(serializedPoints);
+        if (serializedPoints) {
+            return response.json(serializedPoints);
+        } else {
+            return response.status(204).json();
+        }
     }
 
     async show(request: Request, response: Response) {

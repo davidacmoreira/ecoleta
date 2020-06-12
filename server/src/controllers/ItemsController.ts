@@ -12,8 +12,12 @@ class ItemsController {
                 image_url: `http://192.168.1.73:3333/uploads/${item.image}`,
             };
         });
-    
-        return response.json(serializedItems);
+
+        if (serializedItems) {
+            return response.json(serializedItems);
+        } else {
+            return response.status(204).json();
+        }
     }
 }
 
