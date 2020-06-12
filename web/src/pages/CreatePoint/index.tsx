@@ -116,13 +116,13 @@ const CreatPoint = () => {
       </header>
 
       <form onSubmit={handleSubmit}>
-        <h1>Register</h1>
+        <h1>register</h1>
 
         <Dropzone onFileUploaded={setSelectedFile} />
 
         <fieldset>
           <legend>
-            <h2>Data</h2>
+            <h2>data</h2>
           </legend>
 
           <div className="field">
@@ -137,7 +137,7 @@ const CreatPoint = () => {
 
           <div className="field-group">
             <div className="field">
-              <label htmlFor="name">email</label>
+              <label htmlFor="name">e-mail</label>
               <input 
                 type="email"
                 name="email"
@@ -160,7 +160,7 @@ const CreatPoint = () => {
         <fieldset>
           <legend>
             <h2>address</h2>
-            <span>select in map</span>
+            <span>select point</span>
           </legend>
 
           <Map center={initialPosition} zoom={15} onClick={handleMapClick}>

@@ -15,8 +15,8 @@ const Home = () => {
         </header>
 
         <main>
-          <h1>your marketplace of waste collection</h1>
-          <p>help people to find your waste collection point</p>
+          <h1>marketplace for waste collection</h1>
+          <p>help people find a collection point for waste</p>
 
           <Link to="/create-point">
             <span>

@@ -33,8 +33,8 @@ const Dropzone: React.FC<Props> = ({ onFileUploaded }) => {
         ? <img src={selectedFileUrl} alt="thumbnail" />
         : (
           isDragActive ?
-            <p><FiUpload />Drop the files here ...</p> :
-            <p>Drag 'n' drop some files here, or click to select files</p>
+            <p><FiUpload />Drop the file here</p> :
+            <p>Drag 'n' drop some file here, or click to select a file</p>
         )
       }
     </div>
