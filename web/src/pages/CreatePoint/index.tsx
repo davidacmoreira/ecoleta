@@ -97,11 +97,16 @@ const CreatPoint = () => {
       data.append('image', selectedFile);
     }
 
-    await api.post('points', data);
-
-    alert('ok');
-
-    history.push('/');
+    await api.post('points', data)
+      .then(response => { 
+        alert('ok');
+        history.push('/');
+      })
+      .catch(err => {
+        if (err.response.status === 400) {
+          alert(err.response.data.message);
+        }
+      });
   }
 
   return (
