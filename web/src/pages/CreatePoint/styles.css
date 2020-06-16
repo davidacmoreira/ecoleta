@@ -31,7 +31,7 @@
   margin: 80px auto;
   padding: 64px;
   max-width: 730px;
-  background: #FFF;
+  background: var(--background-lighter);
   border-radius: 8px;
 
   display: flex;
@@ -83,7 +83,7 @@
 #page-create-point form .field input[type=email],
 #page-create-point form .field input[type=number] {
   flex: 1;
-  background: #F0F0F5;
+  background: #f5f5f5;
   border-radius: 8px;
   border: 0;
   padding: 16px 24px;
@@ -186,6 +186,12 @@
   text-align: center;
 
   cursor: pointer;
+
+  transition: background-color 0.2s;
+}
+
+.items-grid li:hover {
+  background: #E0F0E0;
 }
 
 .items-grid li span {

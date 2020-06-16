@@ -1,10 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
+import { shade, lighten } from 'polished';
 
 export default createGlobalStyle`
   :root {
     --primary-color: ${props => props.theme.colors.primary};
     --title-color: ${props => props.theme.colors.secundary};
     --text-color: ${props => props.theme.colors.text};
+    --background: ${props => props.theme.colors.background};
+    --background-lighter: ${props => lighten(0.1, props.theme.colors.background)};
   }
   
   * {
@@ -14,7 +17,7 @@ export default createGlobalStyle`
   }
   
   body {
-    background: ${props => props.theme.colors.background};
+    background: var(--background);
     -webkit-font-smoothing: antialiased;
     color: var(--text-color);
   }

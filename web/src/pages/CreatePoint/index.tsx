@@ -1,4 +1,4 @@
-import React, { useEffect, useState, ChangeEvent, FormEvent } from 'react';
+import React, { useEffect, useState, ChangeEvent, FormEvent, useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 import { Map, TileLayer, Marker } from 'react-leaflet';
@@ -6,10 +6,12 @@ import { LeafletMouseEvent } from 'leaflet';
 import api from '../../services/api';
 
 import Dropzone from '../../components/Dropzone';
+import { ThemeContext } from 'styled-components';
 
 import './styles.css';
 
 import logo from '../../assets/logo.svg';
+import logoDark from '../../assets/logo-dark.svg';
 
 interface Item {
   id: number;
@@ -18,6 +20,8 @@ interface Item {
 }
 
 const CreatPoint = () => {
+  const { title } = useContext(ThemeContext);
+
   const [items, setItems] = useState<Item[]>([]);
 
   const [initialPosition, setInitialPosition] = useState<[number, number]>([0, 0]);
@@ -112,7 +116,7 @@ const CreatPoint = () => {
   return (
     <div id="page-create-point">
       <header>
-        <img src={logo} alt="ecoleta"/>
+        <img src={title === 'light' ? logo : logoDark} alt="ecoleta"/>
 
         <Link to="/">
           <FiArrowLeft />

@@ -34,8 +34,8 @@ const Home: React.FC<Props> = ({ toggleTheme }) => {
             handleDiameter={20}
             offColor={shade(0.15, colors.primary)}
             onColor={colors.secundary}
-            offHandleColor='#333'
-            onHandleColor='#fff'
+            offHandleColor={colors.text}
+            onHandleColor={colors.text}
           />
         </header>
 
