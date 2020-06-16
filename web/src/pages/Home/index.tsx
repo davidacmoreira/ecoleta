@@ -41,7 +41,7 @@ const Home: React.FC<Props> = ({ toggleTheme }) => {
 
         <main>
           <h1>marketplace for waste collection</h1>
-          <p>help people find a collection point for waste</p>
+          <p>help people find a waste collection point</p>
 
           <Link to="/create-point">
             <span>
