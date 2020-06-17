@@ -4,6 +4,8 @@ Ecoleta is a platform to help people finding waste collections points nearly the
 
 This project was developed using **Node.js** to *Backend Server*, **React** to *Frontend Web*, and **React Native** to *Frontend Mobile*. Also used: **TypeScript**, **SQLite**, **knex.js** **Multer**, **celebrate**, **Expo** and more.
 
+<img src=".github/header.gif" width="100%">
+
 
 ## Prerequirements
 
