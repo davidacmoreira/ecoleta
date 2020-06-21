@@ -1,8 +1,8 @@
 # Ecoleta
 
-Ecoleta is a platform to help people finding waste collections points nearly their location. They can find all types of waste that the collection points are able to take. The registry of the waste collection points can be managed in the web interface by each entity. The search for waste collection points, in a specific location and for different types of items, can be made in the mobile interface.
+Ecoleta is a platform to help people finding waste collections points nearly their location. They can find all types of items that the collection points are able to take. The registry of the waste collection points can be managed in the web interface by each entity. The search for waste collection points, in a specific location and for different types of items, can be made in the mobile interface.
 
-This project was developed using **Node.js** to *Backend Server*, **React** to *Frontend Web*, and **React Native** to *Frontend Mobile*. Also used: **TypeScript**, **SQLite**, **knex.js** **Multer**, **celebrate**, **Expo** and more.
+This project was developed using **Node.js** to *Backend Server*, **React** to *Frontend Web*, and **React Native** to *Frontend Mobile*. Also used: **TypeScript**, **SQLite**, **knex.js**, **Multer**, **celebrate**, **styled components**, **Expo** and more.
 
 <img src=".github/header.gif" width="100%">
 
